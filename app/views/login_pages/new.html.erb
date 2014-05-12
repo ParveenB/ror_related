@@ -1,11 +1,12 @@
 <div class="ban">
-	<b><%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %></b>
+  <b><%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %></b>
 </div>
+
 <h1>Page Information</h1>
 <div id="content">
-	<%= simple_form_for(:login_page, :url => {:action => 'create'}) do |f| %>
-		<%= render(:partial => "form",:locals =>{:f=>f})%>
-		<div class="form-buttons">
-		</div>
-	<% end%> 
+  <%= simple_form_for(:login_page, :url => {:action => 'create'}) do |f| %>
+  <%= render(:partial => "form",:locals =>{:f=>f})%>
+    <div class="form-buttons">
+    </div>
+  <% end%> 
 </div>
