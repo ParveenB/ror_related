@@ -1,6 +1,6 @@
 class LoginPagesController < ApplicationController
   
-  layout "parv"
+  layout "project"
   
   def index
     @login_pages = LoginPage.all
