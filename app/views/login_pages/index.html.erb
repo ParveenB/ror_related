@@ -1,43 +1,94 @@
-<% @page_title ="Listing login_page"%>
-<h1>Listing Pages Information</h1>
-<div class="ban">
-<table >
+  <% @page_title ="Listing login_page"%>
+  <h1>Listing Pages Information</h1>
+  <div class="ban">
+    <table >
 	  <tr class="ab">
-      <th>Id</th>
-      <th>User Id</th>
-      <th>Name</th>
-      <th>Password</th>
-      <th>Age</th>
-      <th>Gender</th>
-      <th>Email Id</th>
-      <th>Mobile Number</th>
-      <th>City</th>
-      <th>Country</th>
-      <th>Created On</th>
-      <th>Updated On</th>
-      <th>Action</th>
-    </tr>
-     <% @login_pages.each do |login_page| %>
-        <tr>
-         <td><%=login_page.id %></td>
-          <td><%=login_page.user_id %></td>
-          <td><%=login_page.name %></td>
-          <td><%=login_page.password %></td>
-          <td><%=login_page.age %></td>
-          <td><%=login_page.gender %></td>
-          <td><%=login_page.email %></td>
-          <td><%=login_page.mobile %></td>
-          <td><%=login_page.city %></td>
-          <td><%=login_page.country %></td>
-           <td><%=login_page.created_at %></td>
-          <td><%=login_page.updated_at %></td>
-          <td class="actions">
-                <%= link_to("Show", {:action => 'show', :id => login_page.id},:class => 'action show') %>
-          </td>
-        </tr>
+        <th>
+          Id
+        </th>
+        <th>
+          User Id
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Password
+        </th>
+        <th>
+          Age
+        </th>
+        <th>
+          Gender
+        </th>
+        <th>
+          Email Id
+        </th>
+        <th>
+          Mobile Number
+        </th>
+        <th>
+          City
+        </th>
+        <th>
+          Country
+        </th>
+        <th>
+          Created On
+        </th>
+        <th>
+          Updated On
+        </th>
+        <th>
+          Action
+        </th>
+      </tr>
+      <% @login_pages.each do |login_page| %>
+      <tr>
+        <td>
+          <%=login_page.id %>
+        </td>
+        <td>
+          <%=login_page.user_id %>
+        </td>
+        <td>
+          <%=login_page.name %>
+        </td>
+        <td>
+          <%=login_page.password %>
+        </td>
+        <td>
+          <%=login_page.age %>
+        </td>
+        <td>
+          <%=login_page.gender %>
+        </td>
+        <td>
+          <%=login_page.email %>
+        </td>
+        <td>
+          <%=login_page.mobile %>
+        </td>
+        <td>
+          <%=login_page.city %>
+        </td>
+        <td>
+          <%=login_page.country %>
+        </td>
+        <td>
+          <%=login_page.created_at %>
+        </td>
+        <td>
+          <%=login_page.updated_at %>
+        </td>
+        <td class="actions">
+          <%= link_to("Show", {:action => 'show', :id => login_page.id},:class => 'action show') %>
+        </td>
+      </tr>
     <% end %>
   
- </table>
- </div>
+    </table>
+  </div>
 <br>
 <h2><%= link_to ('Create New Page',{:action=>'new'},:class=> 'action new") %></h2>
+
