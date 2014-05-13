@@ -14,6 +14,7 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+#gems for simple_form
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -25,6 +26,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 gem 'country_select', '~> 1.3.1'
 gem 'simple_form', '~> 3.0.2'
 

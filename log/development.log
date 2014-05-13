@@ -1,0 +1,2738 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to LoginPages (20140513060731)
+  [1m[35m (0.7ms)[0m  CREATE TABLE `login_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` varchar(25), `password` varchar(25), `name` varchar(50), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'login_pages' already exists: CREATE TABLE `login_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` varchar(25), `password` varchar(25), `name` varchar(50), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from service at /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 11:45:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1070024312644908857__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to LoginPages (20140513060731)
+  [1m[35m (0.6ms)[0m  CREATE TABLE `login_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` varchar(25), `password` varchar(25), `name` varchar(50), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql2::Error: Table 'login_pages' already exists: CREATE TABLE `login_pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `user_id` varchar(25), `password` varchar(25), `name` varchar(50), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 11:47:04 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 63ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:47:15 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (0.7ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:93: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=>'new'},:class=> 'ac...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:93: syntax error, unexpected '}', expecting ')'
+...eate New Page',{:action=>'new'},:class=> 'action new") );@ou...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:93: unterminated regexp meets end of file
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:93: syntax error, unexpected end-of-input, expecting ')'):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__4108075548031046044__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2859252146605256736__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:50:40 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=>'new'},:class=> 'ac...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...eate New Page',{:action=>'new'},:class=> 'action new") );@ou...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: unterminated regexp meets end of file
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected end-of-input, expecting ')'):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__4108075548031046044__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2859252146605256736__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 11:53:09 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 39ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:53:16 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (0.8ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=> 'new' }, :class=> ...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...te New Page',{:action=> 'new' }, :class=> 'action new") );@o...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: unterminated regexp meets end of file
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected end-of-input, expecting ')'):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__365341762987152877__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2028158332694891431__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:53:54 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (1.9ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=> 'new' }, :class=> ...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...te New Page',{:action=> 'new' }, :class=> 'action new') );@o...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ')', expecting keyword_end
+...ew' }, :class=> 'action new') );@output_buffer.safe_append='...
+...                               ^):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__365341762987152877__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2028158332694891431__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.1ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:56:12 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (1.0ms)
+Completed 500 Internal Server Error in 40ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=> 'new' }, :class=> ...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...te New Page',{:action=> 'new' }, :class=> ' action new '));@...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ')', expecting keyword_end
+...w' }, :class=> ' action new '));@output_buffer.safe_append='...
+...                               ^):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__3174119839169022824__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2103872217720923755__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:56:15 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (0.7ms)
+Completed 500 Internal Server Error in 2ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=> 'new' }, :class=> ...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...te New Page',{:action=> 'new' }, :class=> ' action new '));@...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ')', expecting keyword_end
+...w' }, :class=> ' action new '));@output_buffer.safe_append='...
+...                               ^):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__3174119839169022824__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2103872217720923755__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:57:35 +0530
+Processing by LoginPagesController#index as HTML
+  Rendered login_pages/index.html.erb within layouts/project (2.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ',', expecting ')'
+...d=( link_to ('Create New Page',{:action=> 'new' }, :class=> ...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected '}', expecting ')'
+...te New Page',{:action=> 'new' }, :class=> 'action new '));@o...
+...                               ^
+/home/bigc/Desktop/Simple_form_parv/app/views/login_pages/index.html.erb:95: syntax error, unexpected ')', expecting keyword_end
+...ew' }, :class=> 'action new '));@output_buffer.safe_append='...
+...                               ^):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:403:in `_run__3174119839169022824__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__2103872217720923755__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 11:58:12 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (6.1ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 11:58:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 11:58:12 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 11:58:26 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (44.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (97.1ms)
+Completed 500 Internal Server Error in 105ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007f6d0f4ebf28>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] ,prompt: "Select your gender"%>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb__1080910702360153030_70053201644240'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb__1080910702360153030_70053201644240'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb___585917568799560178_70053192520180'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb___585917568799560178_70053192520180'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:00:27 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (38.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (54.5ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007fd719a7bc30>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] ,prompt: "Select your gender"%>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb___4156431044073413008_70280922760740'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___4156431044073413008_70280922760740'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb__779996018726097553_70280913707160'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb__779996018726097553_70280913707160'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:14:24 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (37.3ms)
+  Rendered login_pages/new.html.erb within layouts/project (55.2ms)
+Completed 500 Internal Server Error in 78ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007f713d730e50>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] ,prompt: "Select your gender"%>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb___1175350522714712666_70062170546120'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___1175350522714712666_70062170546120'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.3ms)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:16:07 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (8.2ms)
+  Rendered login_pages/new.html.erb within layouts/project (10.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007f713d97c240>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] %>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb___1175350522714712666_70062170724480'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___1175350522714712666_70062170724480'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.1ms)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:16:24 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (9.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (10.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `email' for #<LoginPage:0x007f712cbaab90>):
+    30:         
+    31:         <tr>
+    32:           <td>
+    33:         	<%=f.input :email , placeholder: 'user@domain.com', input_html: { maxlength: 20 },required: true%>
+    34:           </td>
+    35:         </tr>  
+    36:          
+  app/views/login_pages/_form.html.erb:33:in `block in _app_views_login_pages__form_html_erb___1175350522714712666_70062029274980'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___1175350522714712666_70062029274980'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb___2394736374878895419_70062169723200'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:18:18 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (40.5ms)
+  Rendered login_pages/new.html.erb within layouts/project (59.0ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007f5bfc2de100>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] %>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb___3851772869743011521_70016525819460'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___3851772869743011521_70016525819460'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb__4317893263605586374_70016524979780'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb__4317893263605586374_70016524979780'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 12:18:29 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:18:35 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (3.1ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:18:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:18:35 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:18:41 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (12.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (14.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `gender' for #<LoginPage:0x007f5becb07c88>):
+    24:         
+    25:         <tr>
+    26:           <td>
+    27:         	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] %>
+    28:           </td>
+    29:         </tr>
+    30:         
+  app/views/login_pages/_form.html.erb:27:in `block in _app_views_login_pages__form_html_erb___3851772869743011521_70016525819460'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___3851772869743011521_70016525819460'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb__4317893263605586374_70016524979780'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb__4317893263605586374_70016524979780'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Adding (20140513065142)
+  [1m[35m (187.9ms)[0m  ALTER TABLE `login_pages` ADD `gender` varchar(20)
+  [1m[36m (144.8ms)[0m  [1mALTER TABLE `login_pages` ADD `email` varchar(20)[0m
+  [1m[35m (143.3ms)[0m  ALTER TABLE `login_pages` ADD `mobile` varchar(10) AFTER `email`
+  [1m[36m (142.2ms)[0m  [1mALTER TABLE `login_pages` ADD `city` varchar(50)[0m
+  [1m[35m (142.2ms)[0m  ALTER TABLE `login_pages` ADD `country` varchar(50)
+  [1m[36m (143.4ms)[0m  [1mALTER TABLE `login_pages` ADD `Age` varchar(10)[0m
+  [1m[35m (141.9ms)[0m  ALTER TABLE `login_pages` ADD `remember_me` varchar(10)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140513065142')
+  [1m[36m (28.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:23:00 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (46.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (67.4ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined method `age' for #<LoginPage:0x007f9cb82f4980>):
+    48:                
+    49:         <tr>
+    50:           <td>
+    51:         	<%= f.input :age, collection: 18..70,prompt: "Select your age"%>
+    52:           </td>
+    53:         </tr>
+    54:         
+  app/views/login_pages/_form.html.erb:51:in `block in _app_views_login_pages__form_html_erb___1236456484978809468_70155541766100'
+  app/views/login_pages/_form.html.erb:5:in `_app_views_login_pages__form_html_erb___1236456484978809468_70155541766100'
+  app/views/login_pages/new.html.erb:8:in `block in _app_views_login_pages_new_html_erb__966773843916085840_70155541049520'
+  app/views/login_pages/new.html.erb:7:in `_app_views_login_pages_new_html_erb__966773843916085840_70155541049520'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Addage (20140513065331)
+  [1m[35m (0.3ms)[0m  ALTER TABLE `login_pages` ADD `age` varchar(10)
+Mysql2::Error: Duplicate column name 'age': ALTER TABLE `login_pages` ADD `age` varchar(10)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Addage (20140513065331)
+  [1m[35m (0.3ms)[0m  ALTER TABLE `login_pages` ADD `Age` varchar(10)
+Mysql2::Error: Duplicate column name 'Age': ALTER TABLE `login_pages` ADD `Age` varchar(10)
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:27:02 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__3537228464941734722__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/bigc/.rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to Addage (20140513065331)
+  [1m[35m (0.5ms)[0m  ALTER TABLE `login_pages` ADD `Age` varchar(10)
+Mysql2::Error: Duplicate column name 'Age': ALTER TABLE `login_pages` ADD `Age` varchar(10)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:27:53 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (83.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (104.8ms)
+Completed 200 OK in 144ms (Views: 123.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:27:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:27:54 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:28:58 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Admin12", "name"=>"Admin", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"admin@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"70", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'Admin' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (21.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (22.2ms)
+Completed 200 OK in 65ms (Views: 24.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:28:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:28:58 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:29:12 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Admin", "name"=>"Admin", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"admin@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.1ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'Admin' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (58.1ms)
+  Rendered login_pages/new.html.erb within layouts/project (59.1ms)
+Completed 200 OK in 66ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:29:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:29:12 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:29:58 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Admin", "name"=>"Admin", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"admin@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"34", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'Admin' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (28.2ms)
+  Rendered login_pages/new.html.erb within layouts/project (30.2ms)
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:29:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:29:58 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:31:12 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Test", "name"=>"test", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"36", "country"=>"India", "remember_me"=>"0"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.4ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'test' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (60.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (62.2ms)
+Completed 200 OK in 73ms (Views: 64.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:31:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:31:12 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:32:59 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Test", "name"=>"test", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"36", "country"=>"India", "remember_me"=>"0"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'test' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (3.3ms)
+  Rendered login_pages/_form.html.erb (28.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (30.1ms)
+Completed 200 OK in 42ms (Views: 32.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:32:59 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:32:59 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:33:27 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Test", "name"=>"testing12345", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"35", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.7ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'testing12345' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.7ms)
+  Rendered login_pages/_form.html.erb (51.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (53.3ms)
+Completed 200 OK in 65ms (Views: 56.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:33:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:33:27 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:33:46 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"Test", "name"=>"testingtesting", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"34", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'testingtesting' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (21.9ms)
+  Rendered login_pages/new.html.erb within layouts/project (23.5ms)
+Completed 200 OK in 34ms (Views: 26.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:33:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:33:46 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:34:15 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"123", "name"=>"testingtesting", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"35", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.2ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'testingtesting' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `login_pages` (`city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('Hyderabad', 'India', '2014-05-13 07:04:15', 'test@gmail.com', 'female', '6787980997', 'testingtesting', 'test', '1', '2014-05-13 07:04:15', '123')[0m
+  [1m[35m (27.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 98ms (ActiveRecord: 28.9ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:34:15 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (7.4ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `age' for #<LoginPage:0x007fa26d4533c0>):
+    58:           <%=login_page.password %>
+    59:         </td>
+    60:         <td>
+    61:           <%=login_page.age %>
+    62:         </td>
+    63:         <td>
+    64:           <%=login_page.gender %>
+  app/views/login_pages/index.html.erb:61:in `block in _app_views_login_pages_index_html_erb__2672930936333423077_70167796729080'
+  app/views/login_pages/index.html.erb:46:in `_app_views_login_pages_index_html_erb__2672930936333423077_70167796729080'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:34:41 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (5.9ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:34:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:34:41 +0530
+
+
+Started GET "/login_pages/edit/1" for 127.0.0.1 at 2014-05-13 12:34:48 +0530
+Processing by LoginPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1[0m
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (23.4ms)
+  Rendered login_pages/edit.html.erb within layouts/project (26.6ms)
+Completed 200 OK in 33ms (Views: 29.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:34:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:34:48 +0530
+
+
+Started POST "/login_pages/update/1" for 127.0.0.1 at 2014-05-13 12:34:58 +0530
+Processing by LoginPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"123", "name"=>"testingtesting", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"34", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Update Login pages", "id"=>"1"}
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1
+Unpermitted parameters: Age
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.3ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE (`login_pages`.`name` = BINARY 'testingtesting' AND `login_pages`.`id` != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (49.1ms)
+  Rendered login_pages/edit.html.erb within layouts/project (50.2ms)
+Completed 200 OK in 61ms (Views: 51.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:34:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:34:58 +0530
+
+
+Started POST "/login_pages/update/1" for 127.0.0.1 at 2014-05-13 12:35:12 +0530
+Processing by LoginPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"123", "name"=>"testingtesting", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"65", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Update Login pages", "id"=>"1"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1
+Unpermitted parameters: Age
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.2ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE (`login_pages`.`name` = BINARY 'testingtesting' AND `login_pages`.`id` != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 9ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:35:12 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (3.1ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:35:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:35:12 +0530
+
+
+Started GET "/login_pages/show/1" for 127.0.0.1 at 2014-05-13 12:35:28 +0530
+Processing by LoginPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLoginPage Load (0.3ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1[0m
+  Rendered login_pages/show.html.erb within layouts/project (2.2ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `age' for #<LoginPage:0x007fa26e4fd180>):
+    26:           </tr>
+    27:           <tr>
+    28:             <th>Age</th>
+    29:               <td><%= @login_page.age %></td>
+    30:           </tr>
+    31:           <tr>
+    32:             <th>Gender</th>
+  app/views/login_pages/show.html.erb:29:in `_app_views_login_pages_show_html_erb___2455576031051936623_70167806088460'
+
+
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.7ms)
+
+
+Started GET "/login_pages/show/1" for 127.0.0.1 at 2014-05-13 12:35:48 +0530
+Processing by LoginPagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1
+  Rendered login_pages/show.html.erb within layouts/project (1.1ms)
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:35:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:35:48 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:35:52 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (1.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:35:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:35:52 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:35:54 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (53.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (55.4ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:35:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:35:54 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:36:24 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"23", "name"=>"caaecrcerc3e", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"cwerr@gbfgb.com", "mobile"=>"5456344584", "city"=>"ucnjenhuyencyew", "Age"=>"70", "country"=>"Bangladesh", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+Unpermitted parameters: Age
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'caaecrcerc3e' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `login_pages` (`city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('ucnjenhuyencyew', 'Bangladesh', '2014-05-13 07:06:24', 'cwerr@gbfgb.com', 'male', '5456344584', 'caaecrcerc3e', 'cacaqrere', '1', '2014-05-13 07:06:24', '23')
+  [1m[36m (49.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 60ms (ActiveRecord: 50.7ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:36:24 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (2.5ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:36:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:36:24 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:36:58 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (57.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (58.7ms)
+Completed 200 OK in 65ms (Views: 60.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:36:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:36:58 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:37:28 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"45", "name"=>"vrvr", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"user@gdc.com", "mobile"=>"54343543", "city"=>"bsbtgvbfrg", "Age"=>"18", "country"=>"Afghanistan", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.4ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'vrvr' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.3ms)
+  Rendered login_pages/_form.html.erb (21.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (22.7ms)
+Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:28 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:37:37 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"45", "name"=>"vrvrfvfgvdfvdfv", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"user@gdc.com", "mobile"=>"54343543", "city"=>"bsbtgvbfrg", "Age"=>"18", "country"=>"Afghanistan", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'vrvrfvfgvdfvdfv' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('18', 'bsbtgvbfrg', 'Afghanistan', '2014-05-13 07:07:37', 'user@gdc.com', 'male', '54343543', 'vrvrfvfgvdfvdfv', 'vfdvdvv', '1', '2014-05-13 07:07:37', '45')
+  [1m[36m (35.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 47ms (ActiveRecord: 37.1ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:37:37 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.6ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (8.5ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:38 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:38 +0530
+
+
+Started GET "/login_pages/delete/2" for 127.0.0.1 at 2014-05-13 12:37:41 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 2 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (2.9ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:41 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:41 +0530
+
+
+Started POST "/login_pages/destroy/2" for 127.0.0.1 at 2014-05-13 12:37:46 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"2"}
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 2
+  [1m[36m (82.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 89ms (ActiveRecord: 82.9ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:37:46 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (3.1ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:46 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:46 +0530
+
+
+Started GET "/login_pages/delete/1" for 127.0.0.1 at 2014-05-13 12:37:48 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLoginPage Load (0.4ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (1.7ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:48 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:48 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:37:50 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (4.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:50 +0530
+
+
+Started GET "/login_pages/edit/1" for 127.0.0.1 at 2014-05-13 12:37:52 +0530
+Processing by LoginPagesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1[0m
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (55.2ms)
+  Rendered login_pages/edit.html.erb within layouts/project (57.4ms)
+Completed 200 OK in 62ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:37:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:37:52 +0530
+
+
+Started POST "/login_pages/update/1" for 127.0.0.1 at 2014-05-13 12:38:01 +0530
+Processing by LoginPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"123", "name"=>"testingtesting", "password"=>"[FILTERED]", "gender"=>"female", "email"=>"test@gmail.com", "mobile"=>"6787980997", "city"=>"Hyderabad", "Age"=>"32", "country"=>"India", "remember_me"=>"1"}, "commit"=>"Update Login pages", "id"=>"1"}
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE (`login_pages`.`name` = BINARY 'testingtesting' AND `login_pages`.`id` != 1) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE `login_pages` SET `password` = 'tewwte', `Age` = '32', `updated_at` = '2014-05-13 07:08:01' WHERE `login_pages`.`id` = 1[0m
+  [1m[35m (33.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 46ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:38:01 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.4ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (5.9ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:38:01 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:38:01 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:42:10 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (4.0ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:42:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:42:10 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:42:14 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (50.5ms)
+  Rendered login_pages/new.html.erb within layouts/project (52.4ms)
+Completed 200 OK in 56ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:42:14 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:42:14 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:42:36 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"66", "name"=>"svvgvfrfsgvsf", "password"=>"[FILTERED]", "gender"=>"", "email"=>"u@gmail.com", "mobile"=>"byguih", "city"=>"hygbyvb 8787 guguyg", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'svvgvfrfsgvsf' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.7ms)
+  Rendered login_pages/_form.html.erb (25.2ms)
+  Rendered login_pages/new.html.erb within layouts/project (26.9ms)
+Completed 200 OK in 37ms (Views: 29.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:42:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:42:36 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 12:42:51 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"66", "name"=>"svvgvfrfsgvsf", "password"=>"[FILTERED]", "gender"=>"", "email"=>"u@gmail.com", "mobile"=>"5415616514", "city"=>"hygbyvb 8787 guguyg", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login page"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'svvgvfrfsgvsf' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('', 'hygbyvb 8787 guguyg', '', '2014-05-13 07:12:51', 'u@gmail.com', '', '5415616514', 'svvgvfrfsgvsf', 'frcewrvcewvc', '1', '2014-05-13 07:12:51', '66')
+  [1m[36m (36.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 45ms (ActiveRecord: 37.1ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:42:51 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (7.5ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:42:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:42:51 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 12:45:57 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (60.1ms)
+  Rendered login_pages/new.html.erb within layouts/project (62.6ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:45:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:45:57 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:46:03 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.3ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (3.9ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:46:03 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:46:03 +0530
+
+
+Started GET "/login_pages/edit/4" for 127.0.0.1 at 2014-05-13 12:46:14 +0530
+Processing by LoginPagesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mLoginPage Load (0.6ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 4 LIMIT 1
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (57.2ms)
+  Rendered login_pages/edit.html.erb within layouts/project (59.2ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:46:14 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:46:14 +0530
+
+
+Started POST "/login_pages/update/4" for 127.0.0.1 at 2014-05-13 12:46:23 +0530
+Processing by LoginPagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"66", "name"=>"svvgvfrfsgvsf", "password"=>"[FILTERED]", "gender"=>"", "email"=>"u@gmail.com", "mobile"=>"5415616514", "city"=>"hygbyvb 8787 guguyg", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Update Login pages", "id"=>"4"}
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 4 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE (`login_pages`.`name` = BINARY 'svvgvfrfsgvsf' AND `login_pages`.`id` != 4) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE `login_pages` SET `password` = 'hdtrhdtrhrhr', `updated_at` = '2014-05-13 07:16:23' WHERE `login_pages`.`id` = 4
+  [1m[36m (36.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 51ms (ActiveRecord: 37.7ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 12:46:23 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (7.4ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 12:46:23 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 12:46:23 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-13 13:28:16 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 13:28:22 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.2ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (7.9ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:28:22 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:28:22 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 13:45:53 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (54.8ms)
+  Rendered login_pages/new.html.erb within layouts/project (56.7ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:45:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:45:53 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 13:47:28 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (22.5ms)
+  Rendered login_pages/new.html.erb within layouts/project (23.5ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:47:28 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:47:28 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 13:52:35 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (48.8ms)
+  Rendered login_pages/new.html.erb within layouts/project (50.5ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:52:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:52:35 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:52:53 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"21", "name"=>"ccecerc", "password"=>"[FILTERED]", "gender"=>"", "email"=>"", "mobile"=>"cwececrwe", "city"=>"cewc ewcre 3434", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ccecerc' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (1.9ms)
+  Rendered login_pages/_form.html.erb (22.2ms)
+  Rendered login_pages/new.html.erb within layouts/project (23.8ms)
+Completed 200 OK in 38ms (Views: 26.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:52:53 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:52:53 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:53:24 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"21", "name"=>"ccecerccwcewcw", "password"=>"[FILTERED]", "gender"=>"", "email"=>"an@gm.com", "mobile"=>"2323232323", "city"=>"cewc ewcre 3434", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ccecerccwcewcw' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (0.7ms)
+  Rendered login_pages/_form.html.erb (53.2ms)
+  Rendered login_pages/new.html.erb within layouts/project (55.0ms)
+Completed 200 OK in 64ms (Views: 57.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:24 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:53:31 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"21", "name"=>"ccecerccwcewcw", "password"=>"[FILTERED]", "gender"=>"", "email"=>"an@gm.com", "mobile"=>"2323232323", "city"=>"cewc ewcre 3434", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ccecerccwcewcw' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('', 'cewc ewcre 3434', '', '2014-05-13 08:23:31', 'an@gm.com', '', '2323232323', 'ccecerccwcewcw', 'wewewewewe', '1', '2014-05-13 08:23:31', '21')
+  [1m[36m (39.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 51ms (ActiveRecord: 40.7ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 13:53:31 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (9.1ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:31 +0530
+
+
+Started GET "/login_pages/delete/4" for 127.0.0.1 at 2014-05-13 13:53:42 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mLoginPage Load (0.6ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 4 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (1.7ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:42 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:42 +0530
+
+
+Started POST "/login_pages/destroy/4" for 127.0.0.1 at 2014-05-13 13:53:43 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"4"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 4 LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 4
+  [1m[36m (37.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 44ms (ActiveRecord: 38.6ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 13:53:43 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.6ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (7.5ms)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:44 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:44 +0530
+
+
+Started GET "/login_pages/delete/5" for 127.0.0.1 at 2014-05-13 13:53:47 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 5 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (1.7ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:47 +0530
+
+
+Started POST "/login_pages/destroy/5" for 127.0.0.1 at 2014-05-13 13:53:49 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"5"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 5
+  [1m[36m (47.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 53ms (ActiveRecord: 48.8ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 13:53:49 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (5.1ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:53:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:53:49 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 13:56:51 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (48.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (50.6ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:56:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:56:51 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:56:54 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"", "name"=>"", "password"=>"[FILTERED]", "gender"=>"", "email"=>"", "mobile"=>"", "city"=>"", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.6ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY '' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (4.6ms)
+  Rendered login_pages/_form.html.erb (26.3ms)
+  Rendered login_pages/new.html.erb within layouts/project (28.3ms)
+Completed 200 OK in 43ms (Views: 31.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:56:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:56:54 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:57:38 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"", "name"=>"", "password"=>"[FILTERED]", "gender"=>"", "email"=>"", "mobile"=>"", "city"=>"", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY '' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (2.8ms)
+  Rendered login_pages/_form.html.erb (56.1ms)
+  Rendered login_pages/new.html.erb within layouts/project (57.6ms)
+Completed 200 OK in 71ms (Views: 59.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:57:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:57:39 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 13:57:56 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"43", "name"=>"bbhbyggbybytbtbt", "password"=>"[FILTERED]", "gender"=>"", "email"=>"adc@ce.nyn", "mobile"=>"5555555555", "city"=>"btrbrebtbreb", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'bbhbyggbybytbtbt' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('', 'btrbrebtbreb', '', '2014-05-13 08:27:56', 'adc@ce.nyn', '', '5555555555', 'bbhbyggbybytbtbt', 'verevr', '1', '2014-05-13 08:27:56', '43')[0m
+  [1m[35m (34.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 45ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 13:57:56 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.4ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (7.2ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 13:57:56 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 13:57:56 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:05:33 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.1ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (22.0ms)
+Completed 200 OK in 28ms (Views: 21.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:05:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:05:33 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:05:38 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (50.6ms)
+  Rendered login_pages/new.html.erb within layouts/project (52.3ms)
+Completed 200 OK in 56ms (Views: 54.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:05:38 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:05:38 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:05:57 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"343", "name"=>"ffgeretre", "password"=>"[FILTERED]", "gender"=>"", "email"=>"us@hdkjh.com", "mobile"=>"5555555555", "city"=>"ijmjinj ijij", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.6ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ffgeretre' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (2.4ms)
+  Rendered login_pages/_form.html.erb (32.1ms)
+  Rendered login_pages/new.html.erb within layouts/project (34.3ms)
+Completed 200 OK in 51ms (Views: 37.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:05:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:05:57 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:06:10 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"343", "name"=>"ffgeretre", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"us@hdkjh.com", "mobile"=>"5555555555", "city"=>"ijmjinj ijij", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ffgeretre' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.6ms)
+  Rendered login_pages/_form.html.erb (45.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (46.8ms)
+Completed 200 OK in 54ms (Views: 48.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:06:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:06:10 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:06:27 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"343", "name"=>"ffgeretre", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"us@hdkjh.com", "mobile"=>"5555555555", "city"=>"ijmjinj ijij", "Age"=>"35", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.2ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ffgeretre' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('35', 'ijmjinj ijij', '', '2014-05-13 08:36:27', 'us@hdkjh.com', 'male', '5555555555', 'ffgeretre', 'ewdree', '1', '2014-05-13 08:36:27', '343')[0m
+  [1m[35m (42.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 53ms (ActiveRecord: 43.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:06:27 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.4ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (3.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:06:27 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:06:27 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:06:46 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (24.6ms)
+Completed 200 OK in 30ms (Views: 24.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:06:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:06:46 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:06:51 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (53.8ms)
+  Rendered login_pages/new.html.erb within layouts/project (55.8ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:06:51 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:06:51 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:07:19 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"44", "name"=>"fdgfgdgdgdgdg", "password"=>"[FILTERED]", "gender"=>"", "email"=>"rter@ede.chkj", "mobile"=>"6555555555", "city"=>"6565ghghtgd  hht", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.7ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'fdgfgdgdgdgdg' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (3.0ms)
+  Rendered login_pages/_form.html.erb (30.8ms)
+  Rendered login_pages/new.html.erb within layouts/project (33.2ms)
+Completed 200 OK in 51ms (Views: 36.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:19 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:07:32 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"44", "name"=>"fdgfgdgdgdgdg", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"rter@ede.chkj", "mobile"=>"6555555555", "city"=>"6565ghghtgd  hht", "Age"=>"29", "country"=>"Azerbaijan", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'fdgfgdgdgdgdg' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('29', '6565ghghtgd hht', 'Azerbaijan', '2014-05-13 08:37:32', 'rter@ede.chkj', 'male', '6555555555', 'fdgfgdgdgdgdg', 'trtrtr', '1', '2014-05-13 08:37:32', '44')
+  [1m[36m (38.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 49ms (ActiveRecord: 39.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:07:32 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (35.0ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:32 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:32 +0530
+
+
+Started GET "/login_pages/delete/6" for 127.0.0.1 at 2014-05-13 14:07:35 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 6 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (1.8ms)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:35 +0530
+
+
+Started POST "/login_pages/destroy/6" for 127.0.0.1 at 2014-05-13 14:07:36 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"6"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 6
+  [1m[36m (34.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 41ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:07:36 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (9.4ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:36 +0530
+
+
+Started GET "/login_pages/delete/7" for 127.0.0.1 at 2014-05-13 14:07:46 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mLoginPage Load (0.6ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 7 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (2.0ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:46 +0530
+
+
+Started POST "/login_pages/destroy/7" for 127.0.0.1 at 2014-05-13 14:07:47 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"7"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 7
+  [1m[36m (39.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 45ms (ActiveRecord: 40.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:07:47 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (7.1ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:07:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:07:47 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:14:24 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (16.6ms)
+Completed 200 OK in 45ms (Views: 24.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:14:24 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:14:24 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:14:26 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (1.5ms)
+  Rendered login_pages/_form.html.erb (54.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (96.8ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:14:26 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:14:26 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:14:47 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"12112", "name"=>"dwfewfwe", "password"=>"[FILTERED]", "gender"=>"", "email"=>"er2fwc@dsdxdx.cg", "mobile"=>"4444444444", "city"=>"retet", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.4ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'dwfewfwe' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (1.2ms)
+  Rendered login_pages/_form.html.erb (22.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (23.8ms)
+Completed 200 OK in 48ms (Views: 25.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:14:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:14:47 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:15:05 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"12112", "name"=>"dwfewfwe", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"er2fwc@dsdxdx.cg", "mobile"=>"4444444444", "city"=>"retet", "Age"=>"30", "country"=>"Bahamas", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'dwfewfwe' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('30', 'retet', 'Bahamas', '2014-05-13 08:45:05', 'er2fwc@dsdxdx.cg', 'male', '4444444444', 'dwfewfwe', 'reterte', '1', '2014-05-13 08:45:05', '12112')
+  [1m[36m (49.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 60ms (ActiveRecord: 50.9ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:15:05 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (3.9ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:15:05 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:15:05 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:17:06 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.3ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (36.3ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:17:06 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:17:06 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:17:07 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (30.9ms)
+  Rendered login_pages/new.html.erb within layouts/project (32.8ms)
+Completed 200 OK in 36ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:17:07 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:17:07 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:17:27 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"323232", "name"=>"dfsdfsddsadsd", "password"=>"[FILTERED]", "gender"=>"", "email"=>"dsds@ded.cdc", "mobile"=>"3333333333", "city"=>"wdewd ewr433", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'dfsdfsddsadsd' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.7ms)
+  Rendered login_pages/_form.html.erb (50.6ms)
+  Rendered login_pages/new.html.erb within layouts/project (51.7ms)
+Completed 200 OK in 57ms (Views: 53.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:17:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:17:27 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:18:12 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"323232", "name"=>"dfsdfsddsadsd", "password"=>"[FILTERED]", "gender"=>"", "email"=>"dsds@ded.cdc", "mobile"=>"3333333333", "city"=>"wdewd ewr433", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.1ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'dfsdfsddsadsd' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('', 'wdewd ewr433', '', '2014-05-13 08:48:12', 'dsds@ded.cdc', '', '3333333333', 'dfsdfsddsadsd', 'sdsdsdsd', '1', '2014-05-13 08:48:12', '323232')[0m
+  [1m[35m (25.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 47ms (ActiveRecord: 27.2ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:18:12 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.3ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (11.7ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:13 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:13 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:18:15 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (32.9ms)
+  Rendered login_pages/new.html.erb within layouts/project (34.8ms)
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:15 +0530
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:15 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:18:33 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"34567", "name"=>"wcewccewcewc", "password"=>"[FILTERED]", "gender"=>"", "email"=>"ccwc@ece.fghf", "mobile"=>"5555555555", "city"=>"rhrh 546464", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'wcewccewcewc' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('', 'rhrh 546464', '', '2014-05-13 08:48:33', 'ccwc@ece.fghf', '', '5555555555', 'wcewccewcewc', 'cewcewc', '1', '2014-05-13 08:48:33', '34567')
+  [1m[36m (35.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 45ms (ActiveRecord: 36.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:18:33 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (5.3ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:33 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:33 +0530
+
+
+Started GET "/login_pages/delete/10" for 127.0.0.1 at 2014-05-13 14:18:39 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 10 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (3.1ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:39 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:39 +0530
+
+
+Started POST "/login_pages/destroy/10" for 127.0.0.1 at 2014-05-13 14:18:40 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"10"}
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 10
+  [1m[36m (38.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 45ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:18:40 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.5ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (6.7ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:41 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:41 +0530
+
+
+Started GET "/login_pages/delete/11" for 127.0.0.1 at 2014-05-13 14:18:42 +0530
+Processing by LoginPagesController#delete as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mLoginPage Load (0.3ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 11 LIMIT 1[0m
+  Rendered login_pages/delete.html.erb within layouts/project (0.7ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:42 +0530
+
+
+Started POST "/login_pages/destroy/11" for 127.0.0.1 at 2014-05-13 14:18:43 +0530
+Processing by LoginPagesController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "commit"=>"Delete", "id"=>"11"}
+  [1m[35mLoginPage Load (0.2ms)[0m  SELECT `login_pages`.* FROM `login_pages` WHERE `login_pages`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `login_pages` WHERE `login_pages`.`id` = 11
+  [1m[36m (39.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 42ms (ActiveRecord: 39.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:18:43 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.7ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (9.2ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:18:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:18:43 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:25:10 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.0ms)
+  Rendered login_pages/_form.html.erb (54.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (56.1ms)
+Completed 200 OK in 64ms (Views: 57.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:25:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:25:10 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-13 14:30:27 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (24.5ms)
+  Rendered login_pages/new.html.erb within layouts/project (26.4ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:30:27 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:30:27 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:30:46 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"35667", "name"=>"fggbdfgdgfdgdf", "password"=>"[FILTERED]", "gender"=>"", "email"=>"dfgg@dfewf.cmg", "mobile"=>"4544444444", "city"=>"ghrhgfhghf", "Age"=>"", "country"=>"", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'fggbdfgdgfdgdf' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered application/_error_messages.html.erb (1.1ms)
+  Rendered login_pages/_form.html.erb (51.0ms)
+  Rendered login_pages/new.html.erb within layouts/project (52.4ms)
+Completed 200 OK in 67ms (Views: 54.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:30:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:30:46 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:30:58 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"35667", "name"=>"fggbdfgdgfdgdf", "password"=>"[FILTERED]", "gender"=>"", "email"=>"dfgg@dfewf.cmg", "mobile"=>"4544444444", "city"=>"ghrhgfhghf", "Age"=>"34", "country"=>"Bangladesh", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'fggbdfgdgfdgdf' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered application/_error_messages.html.erb (0.6ms)
+  Rendered login_pages/_form.html.erb (21.9ms)
+  Rendered login_pages/new.html.erb within layouts/project (23.9ms)
+Completed 200 OK in 35ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:30:58 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:30:58 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-13 14:31:09 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHoKy2Ws8RFewcsgB1LKC1B7lGAjzc1jEWKM3kX0Jkk=", "login_page"=>{"user_id"=>"35667", "name"=>"fggbdfgdgfdgdf", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"dfgg@dfewf.cmg", "mobile"=>"4544444444", "city"=>"ghrhgfhghf", "Age"=>"34", "country"=>"Bangladesh", "remember_me"=>"0"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.2ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'fggbdfgdgfdgdf' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('34', 'ghrhgfhghf', 'Bangladesh', '2014-05-13 09:01:09', 'dfgg@dfewf.cmg', 'male', '4544444444', 'fggbdfgdgfdgdf', 'rtrr', '0', '2014-05-13 09:01:09', '35667')[0m
+  [1m[35m (36.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 48ms (ActiveRecord: 37.5ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-13 14:31:09 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.4ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (11.7ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-13 14:31:09 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-13 14:31:09 +0530

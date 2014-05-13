@@ -1,30 +1,30 @@
- <%= error_messages_for(@login_pages) %>
+ <%= error_messages_for(@login_page) %>
   <div class="ban">
   	
     <table class="simple_form" >
       <%= simple_form_for(:login_page, :url => {:action => 'create'}) do |f| %>
-      
+        <%= f.error_notification %>
         <tr>
           <td>
-            <%= f.input :user_id , label: 'User Id :', input_html: { maxlength: 25},required: true,autofocus: true%>
+            <%= f.input :user_id , label: 'User Id :', input_html: { maxlength: 25},required: true,autofocus: true %>
           </td>
         </tr>
         
         <tr>
           <td>
-            <%= f.input :name, label: 'User Name :' , input_html: { maxlength: 50 },required: true%>
+            <%= f.input :name, label: 'User Name :' , input_html: { maxlength: 50 },required: true %>
           </td>
         </tr>
         
         <tr>
           <td>
-        	<%= f.input :password , hint: ' No special characters.', input_html: { maxlength: 25 },required: true%>
+        	<%= f.input :password , hint: ' No special characters.', input_html: { maxlength: 25 },required: true %>
           </td>
         </tr>
         
         <tr>
           <td>
-        	<%=f.input :gender, input_html: { maxlength: 20 },collection:[:male, :female] ,prompt: "Select your gender"%>
+        	<%=f.input :gender, collection:[:male, :female] ,hint: true%>
           </td>
         </tr>
         
@@ -48,13 +48,13 @@
                
         <tr>
           <td>
-        	<%= f.input :age, collection: 18..70,prompt: "Select your age"%>
+        	<%= f.input :Age, collection: 18..70,prompt: "Select your age",hint: true%>
           </td>
         </tr>
         
         <tr>
           <td>
-        	<%= f.input :country, as: :country,prompt: "Select your country"%>
+        	<%= f.input :country, as: :country,prompt: "Select your country",hint: true%>
           </td>
         </tr>
         
@@ -62,15 +62,7 @@
           <td>
         	<%=f.input :remember_me, inline_label: 'Yes, remember me', :as=> :boolean, :input_html=>{:checked=>"checked"} %>
           </td>
-        </tr>
-        
-        <tr>
-          <td>
-        	<%= f.button :submit %>
-          </td>
-        </tr>
-        
+        </tr>       
       <% end %>
     </table>
-    
   </div>

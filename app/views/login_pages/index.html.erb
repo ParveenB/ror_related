@@ -58,7 +58,7 @@
           <%=login_page.password %>
         </td>
         <td>
-          <%=login_page.age %>
+          <%=login_page.Age %>
         </td>
         <td>
           <%=login_page.gender %>
@@ -83,6 +83,8 @@
         </td>
         <td class="actions">
           <%= link_to("Show", {:action => 'show', :id => login_page.id},:class => 'action show') %>
+          <%= link_to("Edit", {:action => 'edit', :id => login_page.id},:class => 'action Edit') %>
+       <%= link_to("Delete", {:action => 'delete', :id => login_page.id},:class => 'action Delete') %>
         </td>
       </tr>
     <% end %>
@@ -90,5 +92,4 @@
     </table>
   </div>
 <br>
-<h2><%= link_to ('Create New Page',{:action=>'new'},:class=> 'action new") %></h2>
-
+<h2><%= link_to('Create  New Login Page', {:action => 'new'}, :class => 'action new') %></h2>

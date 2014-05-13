@@ -1,9 +1,3 @@
-<% if !flash[:notice].blank? %>
-  <div class="notice">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
-
 <% @page_title = "Show Forms Info" %>
   <div class= "ban">
     <h2>Showing Data</h2>
@@ -26,7 +20,7 @@
           </tr>
           <tr>
             <th>Age</th>
-              <td><%= @login_page.age %></td>
+              <td><%= @login_page.Age %></td>
           </tr>
           <tr>
             <th>Gender</th>

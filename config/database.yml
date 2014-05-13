@@ -1,23 +1,23 @@
 development:
   adapter: mysql2
-  database: demo
+  database: ror
   pool: 5
-  username: username
-  password: password
+  username: root
+  password: vsspl
   timeout: 5000
 
 test:
   adapter: mysql2
-  database: demo
+  database: ror
   pool: 5
-  username: username
-  password: password
+  username: root
+  password: vsspl
   timeout: 5000
 
 production:
   adapter: mysql2
-  database: demo
+  database: ror
   pool: 5
-  username: username
-  password: password
+  username: root
+  password: vsspl
   timeout: 5000

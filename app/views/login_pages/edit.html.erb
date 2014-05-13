@@ -1,0 +1,10 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+  <div class="login pages edit">
+    <h2>Update Login pages</h2>
+	<%= simple_form_for(:login_page, :url => {:action => 'update', :id => @login_page.id}) do |f| %>
+	  <%= render(:partial => "form",:locals =>{:f=>f})%>
+	  <div class="form-buttons">
+	    <%= submit_tag("Update Login pages") %>
+	  </div>
+	<% end %>
+  </div>

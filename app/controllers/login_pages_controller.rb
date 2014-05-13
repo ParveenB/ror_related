@@ -23,9 +23,34 @@ class LoginPagesController < ApplicationController
           render('new')
         end
   end
+  
+  def edit
+    #puts params[:id]
+    @login_page = LoginPage.find(params[:id])
+  end
+  
+   def update
+       @login_page = LoginPage.find(params[:id])
+      if @login_page.update_attributes(login_page_params)
+        flash[:notice]="Login page updated successfully"
+        redirect_to(:action => 'index')
+      else
+        render('edit')
+      end
+  end
+  
+  def delete
+    @login_page = LoginPage.find(params[:id])
+  end
+ 
+  def destroy
+    login_page = LoginPage.find(params[:id]).destroy
+    flash[:notice]="Login page destroyed successfully"
+    redirect_to(:action => 'index')
+  end
  
   private
   def login_page_params
-    params.require(:login_page).permit(:user_id, :password, :name, :age,:gender, :email, :mobile, :city, :country,:created_on, :updated_on,:remember_me)
+    params.require(:login_page).permit(:user_id, :password, :name, :Age,:gender, :email, :mobile, :city, :country,:created_on, :updated_on,:remember_me)
   end
 end
