@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>
+        Parveen is doing simple_form | <%= @page_title || "Parveen" %>
+      </title> 
+        <%= stylesheet_link_tag  "project", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+ 	<%= csrf_meta_tags %>   
+    </head>
+    <body bgcolor="#F37D0F">
+      <div class="section">
+        <div id="header">
+          <h1>SIMPLE_FORM by Parveen</h1>
+          <h2>Task:-  Show & Create </h2>
+        </div>
+    
+        <div id="main">
+          <% if !flash[:notice].blank? %>
+            <div class="notice">
+              <%= flash[:notice] %>
+            </div>
+          <% end %>
+          <div id="content">
+            <%= yield %>
+          </div>
+        </div>
+    
+        <div id="footer" > <br/>
+          <marquee behavior="alternate" ><p id="copyright" >&copy; Parveen.com / Parveen Bala Basran</p></marquee>  
+        </div>
+     </div>
+   </body>
+ </html>
