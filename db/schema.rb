@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140514045745) do
+ActiveRecord::Schema.define(version: 20140514050303) do
 
   create_table "abc", force: true do |t|
     t.string   "user_id",    limit: 25
@@ -49,11 +49,18 @@ ActiveRecord::Schema.define(version: 20140514045745) do
   end
 
   create_table "login_pages", force: true do |t|
-    t.string   "user_id",    limit: 25
-    t.string   "password",   limit: 25
-    t.string   "name",       limit: 50
+    t.string   "user_id",     limit: 25
+    t.string   "password",    limit: 25
+    t.string   "name",        limit: 50
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "gender",      limit: 20
+    t.string   "email",       limit: 20
+    t.string   "mobile",      limit: 10
+    t.string   "city",        limit: 50
+    t.string   "country",     limit: 50
+    t.string   "Age",         limit: 10
+    t.string   "remember_me", limit: 10
   end
 
   create_table "logininfo", force: true do |t|
