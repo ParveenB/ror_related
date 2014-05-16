@@ -1,5 +1,5 @@
 class LoginPagesController < ApplicationController
-  
+  ##.and_return(true)
   layout "project"
   
   def index
