@@ -8,6 +8,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+#export JRUBY_OPTS=--1.9
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,14 +28,16 @@ end
 gem 'country_select', '~> 1.3.1'
 gem 'simple_form', '~> 3.0.2'
 
-group :test do
-# Use rspec for testing
+group :development, :test do
+  gem 'rspec-rails', '~> 2.14.2'
   gem 'rspec', '~> 2.14.1'
+  
+  gem 'faker', '~> 1.3.0'
+  gem 'mysql2'
 end
 
-group :development, :test do
-  # Use mysql2 as the database for Active Record
-  gem 'mysql2'
+group :test do
+  gem 'factory_girl', '~> 4.4.0'
 end
 
 group :production, :staging do

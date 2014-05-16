@@ -2757,3 +2757,226 @@ Migrating to AddingInfo (20140514050303)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140514050303')
   [1m[36m (28.9ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-14 10:37:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 45ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-14 10:37:41 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (2.2ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-14 10:37:42 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-14 10:37:42 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-14 10:39:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (3.6ms)
+Completed 200 OK in 34ms (Views: 16.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-14 10:39:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-14 10:39:43 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-14 10:39:45 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (3.7ms)
+  Rendered login_pages/_form.html.erb (117.3ms)
+  Rendered login_pages/new.html.erb within layouts/project (288.2ms)
+Completed 200 OK in 297ms (Views: 291.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-14 10:39:45 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-14 10:39:45 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-14 10:40:19 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J0iRTxB/bLTHe/Y+zasPJO2sxpoVBv0HROuLej1duuQ=", "login_page"=>{"user_id"=>"1", "name"=>"testtesttest", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"bbbgh@yyub.com", "mobile"=>"7666677777", "city"=>"buybgybyu ygu676", "Age"=>"70", "country"=>"Barbade", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.5ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'testtesttest' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('70', 'buybgybyu ygu676', 'Barbade', '2014-05-14 05:10:19', 'bbbgh@yyub.com', 'male', '7666677777', 'testtesttest', 'buyghjkbh', '1', '2014-05-14 05:10:19', '1')[0m
+  [1m[35m (28.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 97ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-14 10:40:19 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (3.9ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-14 10:40:19 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-14 10:40:19 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-15 14:19:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/bigc/.gem/ruby/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 58ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:19:10 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (53.6ms)
+Completed 200 OK in 111ms (Views: 101.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:19:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:19:10 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:20:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (15.6ms)
+Completed 200 OK in 42ms (Views: 22.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:20:54 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:20:54 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:29:49 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (14.9ms)
+Completed 200 OK in 41ms (Views: 22.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:29:49 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:29:49 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:29:50 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.1ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (1.7ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:29:50 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:29:50 +0530
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:47:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.4ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (14.6ms)
+Completed 200 OK in 41ms (Views: 22.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:47:10 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:47:10 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-15 14:47:11 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (7.7ms)
+  Rendered login_pages/_form.html.erb (149.7ms)
+  Rendered login_pages/new.html.erb within layouts/project (316.2ms)
+Completed 200 OK in 336ms (Views: 334.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:47:12 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:47:12 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-15 14:47:34 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6nThc5Fs0K2mXlJzce5rsBLKX/vGZ1CXjdBC6k+kb/A=", "login_page"=>{"user_id"=>"2", "name"=>"ewcewcwrcwrcwer", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"cwec@gmail.com", "mobile"=>"5555555555", "city"=>"nuihnu uyhuh", "Age"=>"19", "country"=>"Afghanistan", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mLoginPage Exists (0.7ms)[0m  SELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'ewcewcwrcwrcwer' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('19', 'nuihnu uyhuh', 'Afghanistan', '2014-05-15 09:17:34', 'cwec@gmail.com', 'male', '5555555555', 'ewcewcwrcwrcwer', 'cwqcrecwe', '1', '2014-05-15 09:17:34', '2')[0m
+  [1m[35m (33.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 82ms (ActiveRecord: 35.1ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:47:35 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[36mLoginPage Load (0.5ms)[0m  [1mSELECT `login_pages`.* FROM `login_pages`[0m
+  Rendered login_pages/index.html.erb within layouts/project (2.6ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:47:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:47:35 +0530
+
+
+Started GET "/login_pages/new" for 127.0.0.1 at 2014-05-15 14:47:37 +0530
+Processing by LoginPagesController#new as HTML
+  Rendered application/_error_messages.html.erb (0.1ms)
+  Rendered login_pages/_form.html.erb (29.4ms)
+  Rendered login_pages/new.html.erb within layouts/project (31.6ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:47:37 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:47:37 +0530
+
+
+Started POST "/login_pages/create" for 127.0.0.1 at 2014-05-15 14:47:57 +0530
+Processing by LoginPagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6nThc5Fs0K2mXlJzce5rsBLKX/vGZ1CXjdBC6k+kb/A=", "login_page"=>{"user_id"=>"3", "name"=>"vcervrewtvrwevt2vtw", "password"=>"[FILTERED]", "gender"=>"male", "email"=>"evrvre@gmail.com", "mobile"=>"4444444444", "city"=>"gvygvb uhu787", "Age"=>"21", "country"=>"Albania", "remember_me"=>"1"}, "commit"=>"Save Login pages"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mLoginPage Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `login_pages` WHERE `login_pages`.`name` = BINARY 'vcervrewtvrwevt2vtw' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `login_pages` (`Age`, `city`, `country`, `created_at`, `email`, `gender`, `mobile`, `name`, `password`, `remember_me`, `updated_at`, `user_id`) VALUES ('21', 'gvygvb uhu787', 'Albania', '2014-05-15 09:17:57', 'evrvre@gmail.com', 'male', '4444444444', 'vcervrewtvrwevt2vtw', 'vr4vwtrevw', '1', '2014-05-15 09:17:57', '3')
+  [1m[36m (40.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/login_pages
+Completed 302 Found in 50ms (ActiveRecord: 41.8ms)
+
+
+Started GET "/login_pages" for 127.0.0.1 at 2014-05-15 14:47:57 +0530
+Processing by LoginPagesController#index as HTML
+  [1m[35mLoginPage Load (0.3ms)[0m  SELECT `login_pages`.* FROM `login_pages`
+  Rendered login_pages/index.html.erb within layouts/project (28.9ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/project.css?body=1" for 127.0.0.1 at 2014-05-15 14:47:57 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-15 14:47:57 +0530
