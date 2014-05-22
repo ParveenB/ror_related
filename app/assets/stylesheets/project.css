@@ -1,76 +1,98 @@
-table,th,td{ 
+table,th,td  { 
   border: 1px solid black; 
   border-collapse:collapse;	
   width:900px; padding: 20px; 
   text-align:justify; 
   background-color: #FBB663;	
   }
-.ab th{
+.ab th  {
   text-align:justify; 
   color: #181818; 
   background-color: #AF5213;
   }
-.section #header,#main,#content,#fotter,#copyright{ 
+.section #header,#main,#content,#fotter,#copyright  { 
   margin:0px auto;
   }
-html { 
+html  { 
   height: 100%; 
   width: 100%; 
   }
-a, a:visited { 
+a, a:visited  { 
   color: #993120; 
   }
-b {
+b  {
   text-align: center;
   }
-#footer { 
+#footer  { 
   clear: both; 
   height: 6.5em; 
   background: #4C2516 ;
   color: #F2DC87; 
   }
-#footer p { 
+#footer p  { 
   margin: 0; 
   padding: 0.5em 1em;
   color: #F37D0F; 
   }
-#header{  
+#header  {  
   height: 7.5em; 
   background: #4C2516 ;
   color: #F2DC87; 
   }
-#header h1,h2 { 
+#header h1,h2  { 
   margin: 0; 
   padding: 0.5em 1em; 
   text-align: center; 
   color:#F37D0F; 
   }
-#content h1,table{ 
+#content h1,table  { 
   text-align:center;
   }
 #content .ban { 
   text-align: center;   
   }
-.ban table{
+.ban table  {
   margin: auto;
   }
-.simple_form label{	
+.simple_form label  {	
   float: left; 
   text-align: right; 
   margin: 2px 10px;
   }
-.simple_form input{ 
+.simple_form input  { 
   float: right; 
   width:400px; 
   }
-.field_with_errors { }
-.field_with_errors label { color: #AA0000; }
-.field_with_errors input { border:1px solid #AA0000;}
-#errorExplanation { width: 400px; padding: 0; margin: 0 auto 1.5em;
-  border: 1px solid #AA0000; background-color: #FFFFFF; font-size: 12px; }
-#errorExplanation h2 { font-weight: bold; font-size: 12px;
-  padding: 5px 5px 5px 15px; margin: 0; width: 380px;
-  background-color: #AA0000; color: #FFFFFF; }
-#errorExplanation p { color: #333333; margin: 0; padding: 3px 0.5em; }
-#errorExplanation ul { margin-top: 0; }
-#errorExplanation ul li { list-style: square; }
+.field_with_errors  { }
+.field_with_errors label  { 
+  color: #AA0000; 
+  }
+.field_with_errors input  {
+  border:1px solid #AA0000;
+  }
+#errorExplanation  {
+  width: 400px;
+  padding: 0; 
+  margin: 0 auto 1.5em;
+  border: 1px solid #AA0000;
+  background-color: #FFFFFF; 
+  font-size: 12px;
+  }
+#errorExplanation h2 { 
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px 5px 5px 15px; 
+  margin: 0; width: 380px;
+  background-color: #AA0000;
+  color: #FFFFFF; 
+  }
+#errorExplanation p  {
+  color: #333333;
+  margin: 0; 
+  padding: 3px 0.5em; }
+#errorExplanation ul  { 
+  margin-top: 0; 
+  }
+#errorExplanation ul li  { 
+  list-style: square; 
+  }
